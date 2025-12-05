@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher's Day Card</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SDK Scripts -->
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+
+  <style>@view-transition { navigation: auto; }</style>
+</head>
+
+<body>
+  <div class="card-wrapper">
+    <div class="card-container">
+      <div class="card" id="card">
+
+        <!-- FRONT -->
+        <div class="card-face card-front">
+          <svg class="apple-icon" viewBox="0 0 100 100">
+            <path d="M50 10 C30 10, 20 25, 20 40 C20 60, 35 75, 50 90 C65 75, 80 60, 80 40 C80 25, 70 10, 50 10 Z"
+              fill="#ff6b6b" stroke="#fff" stroke-width="2" />
+            <rect x="48" y="5" width="4" height="15" fill="#8b4513" rx="2" />
+            <ellipse cx="55" cy="8" rx="8" ry="5" fill="#90ee90" />
+          </svg>
+
+          <h1 class="card-title" id="cardTitle">Happy Teacher's Day! 📚</h1>
+          <p class="card-message" id="greetingMessage">Thank you for inspiring us every day</p>
+
+          <div class="flip-instruction">
+            Click to open card ✨
+          </div>
+        </div>
+
+        <!-- BACK -->
+        <div class="card-face card-back">
+          <div class="decorative-hearts">💖</div>
+
+          <div class="back-content">
+            <div class="stars">
+              <span class="star">⭐</span>
+              <span class="star">⭐</span>
+              <span class="star">⭐</span>
+              <span class="star">⭐</span>
+              <span class="star">⭐</span>
+            </div>
+
+            <p class="personal-note" id="personalNote">Your guidance has made all the difference</p>
+            <p class="closing" id="closingText">With gratitude and appreciation ✨</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
